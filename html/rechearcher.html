@@ -31,6 +31,72 @@
       border-bottom: 2px solid #343a40;
       padding-bottom: 10px;
     }
+    .hero {
+      background: linear-gradient(to bottom, #006400, #228B22);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      text-align: center;
+      color: #006400;
+    }
+
+    .team-members {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .team-member {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: calc(25% - 20px);
+      min-width: 220px;
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .team-member h3 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .team-member p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
   </style>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -171,6 +237,7 @@
         </symbol>
       </svg>
     </svg>
+
     <!-- Header -->
     <div class="container">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-2">
@@ -215,7 +282,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="researchInfoDropdown">
               <li><a class="dropdown-item" href="/html/from.html">ที่มาและความสำคัญ</a></li>
-              <li><a class="dropdown-item" href="/html/rechearcher.html">คณะผู้วิจัย</a></li>
+              <li><a class="dropdown-item" href="#">คณะผู้วิจัย</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -276,34 +343,66 @@ integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIe
 crossorigin="anonymous"
 ></script>
 
-<div class="container px-4 py-5" id="featured-3">
-    <h2 class="pb-2 border-bottom">ติดต่อเรา</h2>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-        <div class="feature col">
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center mb-3" style="background-color: #788665; color: white; font-size: 2rem;">
-                <svg class="bi" width="3em" height="3em"><use xlink:href="#collection"></use></svg>
-            </div>
-            <h3 class="fs-2 text-body-emphasis">E-Mail การติอต่อ</h3>
-            <p>mangroverbr@gmail.com</p>
-        </div>
-        <div class="feature col">
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center mb-3" style="background-color: #A8B687; color: white; font-size: 2rem;">
-                <svg class="bi" width="3em" height="3em"><use xlink:href="#people-circle"></use></svg>
-            </div>
-            <h3 class="fs-2 text-body-emphasis">เบอร์โทรศัพท์</h3>
-            <p>091-697-7375</p>
-            <p>062-062-3210</p>
-            <p>091-885-5543</p>
-            <p>089-244-1415</p>
-        </div>
-        <div class="feature col">
-            <div class="feature-icon d-inline-flex align-items-center justify-content-center mb-3" style="background-color: #849E95; color: white; font-size: 2rem;">
-                <svg class="bi" width="3em" height="3em"><use xlink:href="#toggles2"></use></svg>
-            </div>
-            <h3 class="fs-2 text-body-emphasis">ที่อยู่</h3>
-            <p>มหาวิทยาลัยศรีนครินทรวิโรฒ เลขที่114 สุขุมวิท 23 แขวงคลองเตยเหนือ เขตวัฒนา กรุงเทพฯ 10110</p>
-        </div>
+<header class="hero">
+    <h1>Teamwork</h1>
+    <p>แนะนำทีมงานผู้มีบทบาทสำคัญในโครงการของเรา</p>
+  </header>
+  
+  <section class="teacher-section container" style="text-align: center; margin: 40px 0;">
+    <div class="teacher-card" style="display: inline-block; text-align: center;">
+      <img 
+        src="/assets/images/aj.jpg" 
+        alt="อาจารย์แนะนำ" 
+        style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;">
+      <div class="teacher-info" style="margin-top: 20px;">
+        <h2>ที่ปรึกษาโครงการ</h2>
+        <p><strong>ผู้ช่วยศาสตราจารย์ ดร. อสมาภรณ์ สิทธิ</strong></p>
+        <p>ผู้ช่วยศาสตราจารย์ สาขาวิชาภูมิศาสตร์</p>
+      </div>
     </div>
-</div>
+  </section>
+  
+  <main class="container">
+    <h2 class="section-title">ผู้วิจัย</h2>
+    <div class="team-members">
+      <!-- สมาชิกทีม -->
+      <div class="team-member">
+        <img src="/assets/images/top.jpg" alt="Team Member 1">
+        <h3>นายทินกร ปทุมสูติ</h3>
+        <p>นิสิตปริญญาตรี มหาวิทยาลัยศรีนครินทรวิโรฒ</p>
+      </div>
+      <div class="team-member">
+        <img src="/assets/images/m0n.jpg" alt="Team Member 2">
+        <h3>นายนันทิศ ยิ่งเกียรตินนท์</h3>
+        <p>นิสิตปริญญาตรี มหาวิทยาลัยศรีนครินทรวิโรฒ</p>
+      </div>
+      <div class="team-member">
+        <img src="/assets/images/ming.jpg" alt="Team Member 3">
+        <h3>นางสาวสาธิตา คงนุกูล</h3>
+        <p>นิสิตปริญญาตรี มหาวิทยาลัยศรีนครินทรวิโรฒ</p>
+      </div>
+      <div class="team-member">
+        <img src="/assets/images/ple.jpg" alt="Team Member 4">
+        <h3>นางสาวอัจฉรา ไวยบุตร </h3>
+        <p>นิสิตปริญญาตรี มหาวิทยาลัยศรีนครินทรวิโรฒ</p>
+      </div>
+    </div>
+  </main>
+  
+      <!-- Heroes -->
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">Mangrove RBR</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">การพัฒนาระบบภูมิสารสนเทศ บนเครือข่ายอินเทอร์เน็ต สำหรับการเปลี่ยนแปลงพื้นที่ป่าชายเลนด้วย Google Earth Engine กรณีศึกษาพื้นที่สงวนชีวมณฑลระนอง</p>
+          <p class="lead mb-4">Development of a web-based geographic information system for monitoring "MANGROVE" area change using "GEE" - A case study of The Ranong Biosphere Reserve.</p>
+          
+          <!-- Logos Centered Directly Under Text -->
+          <div class="logo d-flex justify-content-center align-items-center">
+            <img class="d-block mb-4 me-2" src="/assets/images/Srinakharinwirot_Logo_TH_Color-1.jpg" alt="" width="100" height="100">
+            <img class="d-block mb-4" src="/assets/images/brand.jpg" alt="" width="200" height="100">
+          </div>
+        </div>
+      </div>
+  
   </body>
-</html>
+</html>  
