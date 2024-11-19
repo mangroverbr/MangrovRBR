@@ -32,7 +32,7 @@
       padding-bottom: 10px;
     }
   </style>
-  <body>
+<body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="bootstrap" viewBox="0 0 118 94">
         <title>Bootstrap</title>
@@ -89,6 +89,7 @@
         <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"></path>
       </symbol>
     </svg>
+
     <!-- Header -->
     <div class="container">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-2">
@@ -97,14 +98,10 @@
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
         >
           <!-- Increase size of the first logo -->
-          <svg class="bi me-2" width="80" height="64">
-            <image href="/assets/images/Srinakharinwirot_Logo_TH_Color-1.jpg" width="80" height="64" />
+          <svg class="bi me-2" width="120" height="120">
+            <image href="/assets/images/logo.png" width="120" height="120" />
           </svg>
             
-          <!-- Increase size of the second logo -->
-          <svg class="bi me-2" width="100" height="85">
-            <image href="/assets/images/brand.jpg" width="100" height="85" />
-          </svg>            
     
           <span class="fs-4">Mangrove RBR</span>
         </a>
@@ -155,37 +152,21 @@
               <li><a class="dropdown-item" href="/animalonly.html">ข้อมูลพันธุ์สัตว์ป่าชายเลน</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="researchOutputDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              ผลการวิจัย
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="researchOutputDropdown">
-              <li><a class="dropdown-item" href="/mapchange.html">การใช้ที่ดิน</a></li>
-              <li><a class="dropdown-item" href="/mapchange.html">การเปลี่ยนแปลงพื้นที่ป่าชายเลน</a></li>
-              <li><a class="dropdown-item" href="/result.html">ดัชนี NDII</a></li>
-              <li>        
-            </ul>            
-          </li>
+
+          <a class="nav-link" href="/result.html" id="contactDropdown"> ผลการวิจัย </a>
           
           <li class="nav-item">
-            <a class="nav-link" href="https://ee-nuntit60.projects.earthengine.app/view/mangrove" id="dataAnalysisDropdown">
+            <a class="nav-link" href="/webmap.html" id="dataAnalysisDropdown">
               แผนที่ออนไลน์ Web Map
             </a>                
           </li>
 
-   
+     
 
-    <!-- Contact Link -->
-    <a class="nav-link" href="/contact.html" id="contactDropdown"> ติดต่อ </a>
-  </ul>
-</header>
+      <!-- Contact Link -->
+      <a class="nav-link" href="/contact.html" id="contactDropdown"> ติดต่อ </a>
+    </ul>
+  </header>
 </div>  
 
     <script
@@ -196,105 +177,72 @@
 
         <!-- Details -->
         <div class="container mt-5">
-            <div class="row position-relative">
-              <!-- Image Section with text overlay -->
-              <div class="col-md-12 position-relative">
-                <img src="/assets/images/50511878_295878687945973_6091342.jpg" alt="Mangrove Image" class="img-fluid rounded" style="width: 100%; height: 100%; max-height: 400px; object-fit: cover;">
-                <div class="position-absolute bottom-0 start-50 translate-middle-x text-white p-4" style="background-color: rgba(0, 0, 0, 0.5); border-radius: 10px; width: 30%; text-align: center;">
-                  <h3>ขอบเขตพื้นที่ศึกษา</h3>
-                </div>
-              </div>
+          <div class="row position-relative d-flex justify-content-center align-items-center" style="height: 600px;"> 
+            <!-- Image Section with text overlay -->
+            <div class="col-md-12 d-flex justify-content-center">
+              <img src="/assets/images/ขอบเขตเขต.jpg" alt="Image" class="img-fluid rounded" style="width: 85%; max-height: 600px; object-fit: cover;">
             </div>
-          </div>   
-          
-          <!-- heroes 2 -->
-          <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-              <div class="col-10 col-sm-8 col-lg-6">
-                <img src="/assets/images/46108116_260906154776560_3756443.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-              </div>
-              <div class="col-lg-6">
-                <h1 class="fw-bold text-body-emphasis" style="font-size: 2.5rem;">ความเป็นมาพื้นที่ศึกษา</h1>
-                <p class="lead" style="font-size: 0.9rem; text-indent: 2em;">ป่าชายเลนจังหวัดระนอง เป็นพื้นที่ป่าชายเลนผืนใหญ่ ที่มีความหลากหลาย
-                    ทางชีวภาพสูงซึ่งเป็นพื้นที่ที่มีงานวิจัยในรูปแบบของความร่วมมือระหว่างประเทศด้านป่าชายเลนอย่างแพร่หลาย ตั้งแต่ปี2525 ดังนั้นในปี2539 กรมป่าไม้จึงเสนอพื้นที่ป่าชายเลนบริเวณอำเภอเมืองระนองให้เป็นพื้นที่สงวนชีวมณฑล เพื่อต้องการอนุรักษ์ระบบนิเวศป่าชายเลนให้คงความอุดมสมบูรณ์ ให้ประชาชนได้ประโยชน์จากป่าชายเลนตลอดจนส่งเสริมการศึกษาวิจัยและการฝึกอบรมต่างๆ ที่เกี่ยวกับการอนุรักษ์ทรัพยากรธรรมชาติ
-                    พื้นที่ส่วนใหญ่มีสภาพเป็นทะเลและป่าชายเลน มีพื้นที่บางส่วนเป็นเนินเขา
-                    ทุ่งหญ้าและมีป่าดิบชื้น กระจายอยู่ทั่วไป ในบริเวณพื้นที่สงวนชีวมณฑลระนอง
-                    มีลำคลองต่าง ๆ หลายสายที่ไหลลงสู่ทะเล ที่สำคัญได้แก่ คลองหงาว คลองละอองคลองบางริ้น และคลองทรายขาว จึงทำให้พื้นที่บริเวณนี้มีป่าชายเลนกระจายเป็นบริเวณกว้าง นับเป็นป่าชายเลนผืนใหญ่และมีความอุดมสมบูรณ์มากที่สุด
-                    แห่งหนึ่งของประเทศและเป็นป่าชายเลนแห่งแรกของโลกที่ได้รับการประกาศ
-                    ให้เป็นพื้นที่สงวนชีวมณฑล</p>
-              </div>
+          </div>
+        </div>
 
-              <div class="px-4 pt-5 my-5 text-center border-bottom">
-                <h1 class="fw-bold text-body-emphasis" style="font-size: 2.5rem;">พื้นที่แต่ละเขตของพื้นที่สงวนชีวมณฑลระนอง</h1>
-                <div class="col-lg-6 mx-auto">
-                  <p class="lead mb-4">การแบ่งพื้นที่ อาศัยภูมิประเทศ และความอุดมสมบูรณ์ของป่าชายเลน
-                    และกิจกรรมการใช้ประโยชน์ในพื้นที่ โดยแบ่งเป็น 3 เขต</p>
-                </div>
-                <div class="overflow-hidden" style="max-height: 100%;">
-                  <div class="container px-5">
-                    <img src="/assets/images/แผนที่เเสดงการใช้ประโยชน์ในพื้นที่สงวนช.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-                  </div>
-                </div>
-              </div>
-              
-<!-- Grid -->
-<div class="container">
-    <div class="row">
+              <!-- Underline Section -->
+              <hr style="border: 1px solid #000; margin-top: 20px;">
+            </div> 
       
-      <!-- Core Area Section -->
-      <div class="col-md-4 col-sm-12 mb-4">
-        <div class="border p-3" style="background-color: rgba(15, 81, 183, 0.8);"> <!-- Custom intensity for Core Area -->
-          <h4>พื้นที่แกนกลาง (Core area)</h4>
-          <p>
-            เป็นพื้นที่ที่จัดตั้งขึ้นตามกฎหมาย มีขนาดใหญ่เพียงพอที่จะสนองวัตถุประสงค์ด้านการอนุรักษ์และไม่มีกิจกรรมใด ๆ ยกเว้นด้านการศึกษาวิจัยและติดตามตรวจสอบการเปลี่ยนแปลงของธรรมชาติ มีพื้นที่ 40,762 ไร่ มีสภาพเป็นป่าชายเลนที่อุดมสมบูรณ์ 28,588 ไร่ ล้อมรอบด้วยคลองและทะเล เหมาะเป็นแหล่งสงวนและอนุบาลสัตว์น้ำ และมีส่วนที่เป็นป่าดิบชื้น 12,174 ไร่
-          </p>
+          
+        <!-- Details -->
+        <div class="container mt-5">
+          <div class="row position-relative d-flex justify-content-center align-items-center" style="height: 400px;"> 
+            <!-- Image Section with text overlay -->
+            <div class="col-md-12 d-flex justify-content-center">
+              <img src="/assets/images/ความเป็นมา.jpg" alt="Image" class="img-fluid rounded" style="width: 80%; max-height: 100%; object-fit: cover;">
+            </div>
+          </div>
         </div>
-      </div>
-    
-      <!-- Buffer Zone Section -->
-      <div class="col-md-4 col-sm-12 mb-4">
-        <div class="border p-3" style="background-color: rgba(73, 190, 44, 0.7);"> <!-- Custom intensity for Buffer Zone -->
-          <h4>พื้นที่กันชน (Buffer zone)</h4>
-          <p>
-            เป็นพื้นที่ที่อนุญาตให้มีกิจกรรมที่ไม่ขัดกับการอนุรักษ์ มีพื้นที่ 108,038 ไร่ ส่วนใหญ่เป็นป่าชายเลน มีบางส่วนเป็นชุมชน นากุ้ง พื้นที่เกษตรกรรม และป่าบก
-          </p>
+
+        <div class="container mt-5">
+          <div class="row position-relative d-flex justify-content-center align-items-center" style="height: 280px;"> 
+            <!-- Image Section with text overlay -->
+            <div class="col-md-12 d-flex justify-content-center">
+              <img src="/assets/images/แบ่งออกเป็น3เขต.jpg" alt="Image" class="img-fluid rounded" style="width: 80%; max-height: 100%; object-fit: cover;">
+            </div>
+          </div>
         </div>
-      </div>
-    
-      <!-- Transition Area Section -->
-      <div class="col-md-4 col-sm-12 mb-4">
-        <div class="border p-3" style="background-color: rgba(246, 135, 223, 0.6);"> <!-- Custom intensity for Transition Area -->
-          <h4>พื้นที่รอบนอก (Transition area)</h4>
-          <p>
-            เป็นพื้นที่ที่ใช้ในการดำเนินกิจกรรมทั่วไป เช่น การเกษตร การตั้งถิ่นฐานของชุมชน และอื่น ๆ มีพื้นที่ 40,631 ไร่ มีสภาพเป็นแหล่งชุมชน ถนน สวนยาง สวนปาล์ม สวนมะพร้าว เหมืองแร่ร้างและอุตสาหกรรม
-          </p>
+
+
+        <div class="overflow-hidden" style="max-height: 100%;">
+          <div class="container px-5 d-flex justify-content-center align-items-center" style="height: 100%;"> <!-- Added d-flex, justify-content-center, and align-items-center for centering -->
+            <img src="/assets/images/แผนที่เเสดงการใช้ประโยชน์ในพื้นที่สงวนช.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+          </div>
         </div>
-      </div>
-    
-    </div>
-  </div>
+
+        <div class="container mt-5">
+          <div class="row position-relative d-flex justify-content-center align-items-center" style="height: 600px;"> 
+            <!-- Image Section with text overlay -->
+            <div class="col-md-12 d-flex justify-content-center">
+              <img src="/assets/images/CBT.jpg" alt="Image" class="img-fluid rounded" style="width: 80%; max-height: 600px; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+              
+
 
           <!-- Underline Section -->
           <hr style="border: 1px solid #000; margin-top: 20px;">
   
-<!-- Heroes -->
-<div class="px-4 py-5 my-5 text-center">
-    <h1 class="display-5 fw-bold text-body-emphasis">Mangrove RBR</h1>
-    <div class="col-lg-8 mx-auto"> <!-- Increased width to allow more space for text -->
-        <p class="lead mb-4">
-            การพัฒนาระบบภูมิสารสนเทศ บนเครือข่ายอินเทอร์เน็ต สำหรับการเปลี่ยนแปลงพื้นที่ป่าชายเลนด้วย Google Earth Engine กรณีศึกษาพื้นที่สงวนชีวมณฑลระนอง 
-        </p>
-        <p class="lead mb-4">
-            Development of a web-based geographic information system for monitoring "MANGROVE" area change using "GEE" - A case study of The Ranong Biosphere Reserve. 
-        </p>
-        
-        <!-- Logos Centered Directly Under Text -->
-        <div class="logo d-flex justify-content-center align-items-center">
-            <img class="d-block mb-4 me-2" src="/assets/images/Srinakharinwirot_Logo_TH_Color-1.jpg" alt="" width="100" height="100">
-            <img class="d-block mb-4" src="/assets/images/brand.jpg" alt="" width="200" height="100">
-        </div>
-    </div>
-</div>
+<!-- Footer Section -->
+<!-- Details -->
+<div class="container mt-5">
+  <div class="row position-relative">
+    <!-- Image Section with text overlay -->
+    <div class="col-md-12 position-relative start-50 translate-middle-x">
+      <img src="/assets/images/footer3.png" alt="Image" class="img-fluid rounded" style="width: 100%; height: 100%; max-height: 600px; object-fit: cover;">
 
-  
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+</div>
 </body>
+</html>
