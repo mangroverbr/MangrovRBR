@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/icons/ok--so-now-i-want-the-logo-that-consisting-of-lett.png" type="image/png">
     <title>MangroveRBR</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -31,6 +32,55 @@
       border-bottom: 2px solid #343a40;
       padding-bottom: 10px;
     }
+    .image-block img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .image-block img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(17, 139, 70, 1);
+  }
+
+  .image-block p {
+    transition: color 0.3s ease;
+  }
+
+  .image-block:hover p {
+    color: #11922f;
+    /* Change to your preferred hover text color */
+  }
+
+  /* Hover effect for navbar links */
+  .navbar-nav .nav-link {
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: white; /* Change text color on hover */
+    background-color: #F1F8E8; /* Add a background color on hover */
+    border-radius: 5px; /* Optional: Add rounded corners */
+  }
+
+  /* Dropdown menu hover effect */
+  .dropdown-menu .dropdown-item {
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .dropdown-menu .dropdown-item:hover {
+    color: rgb(11, 11, 11); /* Change text color on hover */
+    background-color: #F1F8E8; /* Change background color on hover */
+  }
+
+  /* Navbar toggle button hover effect */
+  .navbar-toggler {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .navbar-toggler:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    background-color: #355F2E; /* Add a background color on hover */
+  }
+
   </style>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -92,40 +142,47 @@
 
     <!-- Header -->
     <div class="container">
+      <!-- Green Line -->
+      <div style="width: 100%; height: 15px; background: linear-gradient(to right , #55AD9B, #95D2B3);"></div>
+    
       <header class="d-flex flex-wrap justify-content-center py-3 mb-2">
         <a
-          href="/"
+          href="#"
           class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
         >
           <!-- Increase size of the first logo -->
           <svg class="bi me-2" width="120" height="120">
-            <image href="/assets/images/logo.png" width="120" height="120" />
+            <image
+              href="/assets/images/Srinakharinwirot_Logo_TH_Color-1.png"
+              width="120" height="120"
+            />
           </svg>
-            
-    
-          <span class="fs-4">Mangrove RBR</span>
+          <!-- Mangrove RBR Text -->
+          <span class="fs-4" style="color: #1F4529; font-weight: bold;">Mangrove RBR</span>
         </a>
-
-        <!-- Underline Section -->
+        <!-- Long Black Line -->
         <hr style="border: 1px solid #000; margin-top: 20px;">
-      </div> 
       </header>
-    </div>    
+    </div>
+    
+    
 
-    <!-- Navigation with dropdowns -->
-    <div class="container underline">
-      <header class="d-flex justify-content-center py-2">
-        <ul class="nav nav-pills">
-          <a class="nav-link" href="/index.html" id="homeDropdown"> หน้าหลัก </a>
+<!-- Navigation with dropdowns -->
+<div class="container underline">
+  <header class="d-flex justify-content-center py-2" style="background: linear-gradient(to right, #55AD9B, #95D2B3);">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="/index.html"
+        style="color: #355F2E; font-weight: 500; font-family: 'Arial', sans-serif; font-size: 16px;">หน้าหลัก</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Research Info Dropdown -->
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="researchInfoDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="#" id="researchInfoDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               ข้อมูลงานวิจัย
             </a>
             <ul class="dropdown-menu" aria-labelledby="researchInfoDropdown">
@@ -133,19 +190,14 @@
               <li><a class="dropdown-item" href="/rechearcher.html">คณะผู้วิจัย</a></li>
             </ul>
           </li>
+
+          <!-- Study Area Dropdown -->
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="studyAreaDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="#" id="studyAreaDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               พื้นที่ศึกษา
             </a>
             <ul class="dropdown-menu" aria-labelledby="studyAreaDropdown">
-              
               <li><a class="dropdown-item" href="/scope.html">ความเป็นมา</a></li>
               <li><a class="dropdown-item" href="/scope.html">แผนที่แสดงขอบเขตพื้นที่ศึกษา</a></li>
               <li><a class="dropdown-item" href="/plantonly.html">ข้อมูลพันธุ์ไม้ป่าชายเลน</a></li>
@@ -153,27 +205,31 @@
             </ul>
           </li>
 
-          <a class="nav-link" href="/result.html" id="contactDropdown"> ผลการวิจัย </a>
-          
+          <!-- Research Results -->
           <li class="nav-item">
-            <a class="nav-link" href="/webmap.html" id="dataAnalysisDropdown">
-              แผนที่ออนไลน์ Web Map
-            </a>                
+            <a class="nav-link" href="/result.html">ผลการวิจัย</a>
           </li>
 
-     
+          <!-- Web Map -->
+          <li class="nav-item">
+            <a class="nav-link" href="/webmap.html">แผนที่ออนไลน์ Web Map</a>
+          </li>
 
-      <!-- Contact Link -->
-      <a class="nav-link" href="/contact.html" id="contactDropdown"> ติดต่อ </a>
-    </ul>
+          <!-- Contact -->
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">ติดต่อ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
-</div>  
+</div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
 
         <!-- Details -->
         <div class="container mt-5">
@@ -212,7 +268,7 @@
 
         <div class="overflow-hidden" style="max-height: 100%;">
           <div class="container px-5 d-flex justify-content-center align-items-center" style="height: 100%;"> <!-- Added d-flex, justify-content-center, and align-items-center for centering -->
-            <img src="/assets/images/แผนที่เเสดงการใช้ประโยชน์ในพื้นที่สงวนช.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+            <img src="/assets/images/พื้นที่ศึกษา.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
           </div>
         </div>
 
